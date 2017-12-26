@@ -1,6 +1,27 @@
-.header {
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+header,
+nav {
+    margin: 0;
+    padding-top: 16px;
     background-color: #FD739C;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -8,7 +29,12 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin-bottom: 4px;
+    line-height: 1.1;
+}
+
 p {
-    font-size: 22px;
-    line-height: 34px;
+    margin-bottom: 8px;
+    margin-top: 0;
 }
