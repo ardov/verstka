@@ -10,17 +10,55 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    font-size: 22px;
-    line-height: 34px;
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-header,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 0 8px;
+}
+
+.col-1 {
+    width: 8.3333%
+}
+
+.col-2 {
+    width: 16.6666%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.3333%
+}
+
+.col-5 {
+    width: 41.6666%
+}
+
+.col-6 {
+    width: 50%
+}
+
 nav {
-    margin: 0;
-    padding-top: 16px;
-    background-color: #FD739C;
-    color: white;
+    height: 72px;
+    width: 100%;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
