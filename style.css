@@ -1,18 +1,22 @@
 html {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #1d1d1d;
 }
 
 *,
 *:before,
 *:after {
-    /* margin: 0; */
-    /* padding: 0; */
     box-sizing: inherit;
 }
 
-.row {
+.container {
+    width: 976px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.row {
 }
 
 .col-1,
@@ -30,29 +34,18 @@ html {
     padding: 0 8px;
 }
 
-.col-1 {
-    width: 8.3333%
-}
-
-.col-2 {
-    width: 16.6666%
-}
-
-.col-3 {
-    width: 25%
-}
-
-.col-4 {
-    width: 33.3333%
-}
-
-.col-5 {
-    width: 41.6666%
-}
-
-.col-6 {
-    width: 50%
-}
+.col-1 { flex-basis: 8.3333%; }
+.col-2 { flex-basis: 16.6666%; }
+.col-3 { flex-basis: 25%; }
+.col-4 { flex-basis: 33.3333%; }
+.col-5 { flex-basis: 41.6666%; }
+.col-6 { flex-basis: 50%; }
+.col-7 { flex-basis: 58.3333%; }
+.col-8 { flex-basis: 66.6666%; }
+.col-9 { flex-basis: 75%; }
+.col-10 { flex-basis: 83.3333%; }
+.col-11 { flex-basis: 91.6666%; }
+.col-12 { flex-basis: 100%; }
 
 nav {
     height: 72px;
@@ -62,17 +55,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    margin-bottom: 4px;
-    line-height: 1.1;
-}
-
-p {
-    margin-bottom: 8px;
-    margin-top: 0;
+.header {
+    font-size: 22px;
+    line-height: 34px;
 }
