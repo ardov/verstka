@@ -6,32 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Uber Eats</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="columns.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
 <body>
-  <nav class="nav">
-    <div class="container">
-      <div class="row">
+  <nav class="nav container">
+    <div class="row">
 
-        <div class="col-3 nav-section">
-          <img src="./img/logo.svg">
-        </div>
-
-        <form class="col-5 nav-section" action="submit">
-          <button class="btn">ASAP</button> to
-          <input type="text">
-        </form>
-
-        <div class="col-4 nav-section">
-          <button class="btn">Sign In</button>
-          <button class="btn">Register</button>
-          <button>Market</button>
-        </div>
-
+      <div class="col-xs-5 col-lg-3 nav-section">
+        <img src="./img/logo.svg">
       </div>
+
+      <form class="col-lg-5 nav-section" action="submit">
+        <button class="btn">ASAP</button> to
+        <input type="text">
+      </form>
+
+      <div class="col-lg-4 nav-section">
+        <button class="btn">Sign In</button>
+        <button class="btn">Register</button>
+        <button>Market</button>
+      </div>
+
     </div>
   </nav>
 
@@ -42,7 +41,7 @@
       <h1 class="header">Moscow Restaurants</h1>
       <div class="row">
 
-        <div class="col-4">
+        <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="card">
             <img class="card__img" src="./img/restaurants/1.png" alt="">
             <h2 class="card__header">Макдоналдс — Газетный</h2>
@@ -51,7 +50,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="card">
             <img class="card__img" src="./img/restaurants/2.png" alt="">
             <h2 class="card__header">DimSum & Co — ЦДМ</h2>
@@ -60,7 +59,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="card">
             <img class="card__img" src="./img/restaurants/3.png" alt="">
             <h2 class="card__header">ДвижОК — Манежная</h2>
@@ -69,7 +68,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-xs-12 col-md-6 col-lg-4">
           <div class="card">
             <img class="card__img" src="./img/restaurants/4.png" alt="">
             <h2 class="card__header">НЯ — NHA</h2>
@@ -85,62 +84,71 @@
   <footer class="footer">
     <div class="container">
 
-      <section class="logo">
-        <img src="./img/logo.svg">
+      <section class="footer__section footer__section-logo">
+        <img src="./img/white-logo.svg">
       </section>
 
-      <section class="footer-links row">
-        <div class="col-4">
-          <a href="">#UberEats</a>
-          <div class="social-block">
-            <a href="">
-              <img src="./img/social/facebook.svg" alt="facebook">
-            </a>
+      <section class="footer__section footer__section-links">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <button class="language-selector">
+              <div class="language-selector__icon"></div>
+              <div class="language-selector__text">English</div>
+              <div class="language-selector__chevron"></div>
+            </button>
+            <a href="" class="hashtag"><span class="hashtag_hash-sign">#</span>UberEats</a>
+            <div class="social-block">
+              <a href="" class="social-block__item">
+                <img src="./img/social/facebook.svg" alt="facebook">
+              </a>
 
-            <a href="">
-              <img src="./img/social/twitter.svg" alt="twitter">
-            </a>
+              <a href="" class="social-block__item">
+                <img src="./img/social/twitter.svg" alt="twitter">
+              </a>
 
-            <a href="">
-              <img src="./img/social/instagram.svg" alt="instagram">
-            </a>
+              <a href="" class="social-block__item">
+                <img src="./img/social/instagram.svg" alt="instagram">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <a class="footer-link" href="">About UberEats</a>
+            <a class="footer-link" href="">Become a Delivery Partner</a>
+            <a class="footer-link" href="">Become a Restaurant Partner</a>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <a class="footer-link" href="">See all cities</a>
+            <a class="footer-link" href="">Pricing</a>
+            <a class="footer-link" href="">Help</a>
+            <a class="footer-link" href="">FAQs</a>
           </div>
         </div>
-
-        <div class="col-4">
-          <a class="footer-link" href="">About UberEats</a>
-          <a class="footer-link" href="">Become a Delivery Partner</a>
-          <a class="footer-link" href="">Become a Restaurant Partner</a>
-        </div>
-
-        <div class="col-4">
-          <a class="footer-link" href="">See all cities</a>
-          <a class="footer-link" href="">Pricing</a>
-          <a class="footer-link" href="">Help</a>
-          <a class="footer-link" href="">FAQs</a>
-        </div>
       </section>
 
-      <section class="footer-apps">
-        <a href="">
+      <section class="footer__section footer__section-apps">
+        <a href="" class="section-apps__app">
           <img src="./img/App_Store_Badge.png" alt="Download from App Store">
         </a>
-        <a href="">
+        <a href="" class="section-apps__app">
           <img src="./img/Google_Play_Badge.png" alt="Download from Google Play">
         </a>
       </section>
 
-      <section class="terms row">
-        <div class="col-4">
-          <a class="footer-link" href="">© 2017 Uber Technologies Inc.</a>
-        </div>
+      <section class="footer__section footer__section-terms">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <a class="footer-link footer-link_terms" href="">© 2017 Uber Technologies Inc.</a>
+          </div>
 
-        <div class="col-4">
-          <a class="footer-link" href="">Privacy</a>
-        </div>
+          <div class="col-xs-12 col-md-4">
+            <a class="footer-link footer-link_terms" href="">Privacy</a>
+          </div>
 
-        <div class="col-4">
-          <a class="footer-link" href="">Terms</a>
+          <div class="col-xs-12 col-md-4">
+            <a class="footer-link footer-link_terms" href="">Terms</a>
+          </div>
         </div>
       </section>
 
