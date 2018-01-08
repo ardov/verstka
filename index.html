@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
-<body>
+<body class="background">
   <nav class="nav container">
     <div class="row">
 
@@ -36,7 +36,11 @@
 
 
   <main>
-    <section class="search"></section>
+    <section class="container">
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Search for restaurant or cuisine" />
+      </div>
+    </section>
     <section class="restaurants container">
       <h1 class="header">Moscow Restaurants</h1>
       <div class="row">
@@ -91,12 +95,11 @@
       <section class="footer__section footer__section-links">
         <div class="row">
           <div class="col-xs-12 col-md-4">
-            <button class="language-selector">
-              <div class="language-selector__icon"></div>
-              <div class="language-selector__text">English</div>
-              <div class="language-selector__chevron"></div>
-            </button>
-            <a href="" class="hashtag"><span class="hashtag_hash-sign">#</span>UberEats</a>
+            <div class="row">
+              <button class="language-selector col-xs-8">English</button>
+            </div>
+            <a href="" class="hashtag">
+              <span class="hashtag_hash-sign">#</span>UberEats</a>
             <div class="social-block">
               <a href="" class="social-block__item">
                 <img src="./img/social/facebook.svg" alt="facebook">
