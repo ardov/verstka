@@ -13,151 +13,176 @@
 </head>
 
 <body class="background">
-  <nav class="nav container">
-    <div class="row">
 
-      <div class="col-xs-5 col-lg-3 nav-section">
-        <img src="./img/logo.svg">
+  <header class="header" id="top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-5 col-md-3 nav-section">
+          <img src="./img/logo.svg">
+        </div>
+
+        <div class="col-lg-5">
+          <form class="header__form nav-section" action="submit">
+            <button class="btn">ASAP</button>
+            <label for="header__form_to">to</label>
+            <input type="text" class="header__form_to" id="header__form_to">
+          </form>
+        </div>
+
+        <div class="col-lg-4 nav-section">
+          <button class="btn">Sign In</button>
+          <button class="btn">Register</button>
+          <button class="header__basket">Market</button>
+        </div>
+
+      </div>
+  </header>
+
+
+  <main class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="text" class="search-input" placeholder="Search for restaurant or cuisine">
       </div>
 
-      <form class="col-lg-5 nav-section" action="submit">
-        <button class="btn">ASAP</button> to
-        <input type="text">
-      </form>
+      <div class="col-xs-12">
+        <h1 class="restaurants-header">Moscow Restaurants</h1>
+      </div>
 
-      <div class="col-lg-4 nav-section">
-        <button class="btn">Sign In</button>
-        <button class="btn">Register</button>
-        <button>Market</button>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card__img" src="./img/restaurants/1.png" alt="">
+          <h2 class="card__header">Макдоналдс — Газетный</h2>
+          <p class="card__tags">₽₽ • Бургеры</p>
+          <p class="card__time">25 - 35 Min</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card__img" src="./img/restaurants/2.png" alt="">
+          <h2 class="card__header">DimSum & Co — ЦДМ</h2>
+          <p class="card__tags">₽ • Японская • Китайская • Азиатская</p>
+          <p class="card__time">40 - 50 Min</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card__img" src="./img/restaurants/3.png" alt="">
+          <h2 class="card__header">ДвижОК — Манежная</h2>
+          <p class="card__tags">₽ • Американская • Европейская</p>
+          <p class="card__time">35 - 45 Min</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card__img" src="./img/restaurants/4.png" alt="">
+          <h2 class="card__header">НЯ — NHA</h2>
+          <p class="card__tags">₽₽ • Вьетнамская</p>
+          <p class="card__time">30 - 40 Min</p>
+        </div>
       </div>
 
     </div>
-  </nav>
-
-
-  <main>
-    <section class="container">
-      <div class="search">
-        <input type="text" class="search__input" placeholder="Search for restaurant or cuisine" />
-      </div>
-    </section>
-    <section class="restaurants container">
-      <h1 class="header">Moscow Restaurants</h1>
-      <div class="row">
-
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img class="card__img" src="./img/restaurants/1.png" alt="">
-            <h2 class="card__header">Макдоналдс — Газетный</h2>
-            <p class="card__tags">₽₽ • Бургеры</p>
-            <p class="card__time">25 - 35 Min</p>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img class="card__img" src="./img/restaurants/2.png" alt="">
-            <h2 class="card__header">DimSum & Co — ЦДМ</h2>
-            <p class="card__tags">₽ • Японская • Китайская • Азиатская</p>
-            <p class="card__time">40 - 50 Min</p>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img class="card__img" src="./img/restaurants/3.png" alt="">
-            <h2 class="card__header">ДвижОК — Манежная</h2>
-            <p class="card__tags">₽ • Американская • Европейская</p>
-            <p class="card__time">35 - 45 Min</p>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <div class="card">
-            <img class="card__img" src="./img/restaurants/4.png" alt="">
-            <h2 class="card__header">НЯ — NHA</h2>
-            <p class="card__tags">₽₽ • Вьетнамская</p>
-            <p class="card__time">30 - 40 Min</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
     <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="./img/white-logo.svg" class="footer__logo">
+        </div>
+
+        <div class="col-xs-12">
+          <hr class="divider divider_footer divider_after-logo">
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="row">
+            <button class="language-selector col-xs-7 col-md-8">English</button>
+          </div>
+          <a href="" class="hashtag">UberEats</a>
+          <div class="social-block">
+            <a href="" class="social-block__item">
+              <img src="./img/social/facebook.svg" alt="facebook">
+            </a>
+            <a href="" class="social-block__item">
+              <img src="./img/social/twitter.svg" alt="twitter">
+            </a>
+            <a href="" class="social-block__item">
+              <img src="./img/social/instagram.svg" alt="instagram">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <a class="footer-link" href="">About UberEats</a>
+          <a class="footer-link" href="">Become a Delivery Partner</a>
+          <a class="footer-link" href="">Become a Restaurant Partner</a>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <a class="footer-link" href="">See all cities</a>
+          <a class="footer-link" href="">Pricing</a>
+          <a class="footer-link" href="">Help</a>
+          <a class="footer-link" href="">FAQs</a>
+        </div>
+
+        <div class="col-xs-12">
+          <hr class="divider divider_footer divider_after-links">
+        </div>
+
+        <section class="footer__section footer__section-apps">
+          <a href="" class="section-apps__app">
+            <img src="./img/App_Store_Badge.png" alt="Download from App Store">
+          </a>
+          <a href="" class="section-apps__app">
+            <img src="./img/Google_Play_Badge.png" alt="Download from Google Play">
+          </a>
+        </section>
+
+        <div class="col-xs-12">
+          <hr class="divider divider_footer divider_after-apps">
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <a class="footer-link footer-link_terms" href="">© 2017 Uber Technologies Inc.</a>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <a class="footer-link footer-link_terms" href="">Privacy</a>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <a class="footer-link footer-link_terms" href="">Terms</a>
+        </div>
+
+
+
+
+
+
+      <!-- </div>
 
       <section class="footer__section footer__section-logo">
-        <img src="./img/white-logo.svg">
       </section>
 
       <section class="footer__section footer__section-links">
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="row">
-              <button class="language-selector col-xs-8">English</button>
-            </div>
-            <a href="" class="hashtag">
-              <span class="hashtag_hash-sign">#</span>UberEats</a>
-            <div class="social-block">
-              <a href="" class="social-block__item">
-                <img src="./img/social/facebook.svg" alt="facebook">
-              </a>
-
-              <a href="" class="social-block__item">
-                <img src="./img/social/twitter.svg" alt="twitter">
-              </a>
-
-              <a href="" class="social-block__item">
-                <img src="./img/social/instagram.svg" alt="instagram">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <a class="footer-link" href="">About UberEats</a>
-            <a class="footer-link" href="">Become a Delivery Partner</a>
-            <a class="footer-link" href="">Become a Restaurant Partner</a>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <a class="footer-link" href="">See all cities</a>
-            <a class="footer-link" href="">Pricing</a>
-            <a class="footer-link" href="">Help</a>
-            <a class="footer-link" href="">FAQs</a>
-          </div>
-        </div>
       </section>
 
-      <section class="footer__section footer__section-apps">
-        <a href="" class="section-apps__app">
-          <img src="./img/App_Store_Badge.png" alt="Download from App Store">
-        </a>
-        <a href="" class="section-apps__app">
-          <img src="./img/Google_Play_Badge.png" alt="Download from Google Play">
-        </a>
-      </section>
 
       <section class="footer__section footer__section-terms">
         <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <a class="footer-link footer-link_terms" href="">© 2017 Uber Technologies Inc.</a>
-          </div>
 
-          <div class="col-xs-12 col-md-4">
-            <a class="footer-link footer-link_terms" href="">Privacy</a>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <a class="footer-link footer-link_terms" href="">Terms</a>
-          </div>
         </div>
       </section>
 
-    </div>
+    </div> -->
   </footer>
-
+  <a href="#top" class="to-top"></a>
 </body>
 
 </html>
