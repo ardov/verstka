@@ -10,11 +10,15 @@ xl — от 1200 и выше (большие десктопы).
   max-width: 992px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .col-xs-1,

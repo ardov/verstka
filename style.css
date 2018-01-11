@@ -37,6 +37,9 @@ html {
   }
 }
 
+.header__btn {
+}
+
 .btn {
   display: inline-block;
   padding: 7px 15px;
@@ -94,7 +97,6 @@ html {
   }
 }
 
-
 /* 
   RESTAURANT CARDS
 */
@@ -109,6 +111,13 @@ html {
 
 .card {
   margin-top: 16px;
+  display: block;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card__img {
@@ -152,8 +161,8 @@ html {
 .footer {
   display: block;
   margin-top: 80px;
-  padding-top: 56px;
-  padding-bottom: 40px;
+  /* padding-top: 56px;
+  padding-bottom: 40px; */
   background-color: #262626;
 }
 
@@ -173,42 +182,66 @@ html {
   border-bottom: solid 1px rgba(255, 255, 255, 0.4);
 }
 
-.footer__section-logo {
+.footer__section_logo {
   padding-top: 56px;
   padding-bottom: 40px;
 }
 
-.footer__section-links {
+.footer__section_links {
   padding-top: 32px;
   padding-bottom: 40px;
 }
 
-.language-selector {
+.select {
   position: relative;
+  min-width: 50%;
+}
+
+.select__select {
+  position: absolute;
+  min-width: 50%;
+  height: 40px;
+  opacity: 0.1;
+  z-index: 100;
+}
+
+.lang-select {
+  position: relative;
+  left: 0;
+  margin-top: 32px;
+  min-width: 50%;
+  height: 40px;
   padding: 12px 32px 12px 48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: #3b3b3b;
+  background-image: url(./img/world.svg), url(./img/chevron.svg);
+  background-position: left 16px center, right 8px center;
   background-repeat: no-repeat;
   border-radius: 2px;
   border: none;
-  margin-bottom: 16px;
   text-align: left;
   color: #ffffff;
 }
 
-.language-selector::before {
+.lang-select::-ms-expand {
+  display: none;
+}
+
+/* .lang-select::before {
   position: absolute;
   left: 16px;
   content: url(./img/world.svg);
 }
-.language-selector::after {
+.lang-select::after {
   position: absolute;
   right: 8px;
   content: url(./img/chevron.svg);
-}
+} */
 
 .hashtag {
   display: block;
-  margin-bottom: 16px;
+  margin-top: 32px;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
@@ -216,12 +249,13 @@ html {
 }
 
 .hashtag::before {
-  content: '#';
+  content: "#";
   color: #49a144;
 }
 
 .social-block {
   display: block;
+  margin-top: 16px;
   margin-bottom: 32px;
 }
 
@@ -231,7 +265,7 @@ html {
   height: 24px;
 }
 
-.footer__section-apps {
+.footer__section_apps {
   display: flex;
   justify-content: center;
   padding-top: 24px;
@@ -243,9 +277,10 @@ html {
   margin-right: 12px;
 }
 
-.footer__section-terms {
+.footer__section_terms {
   padding-top: 24px;
   padding-bottom: 24px;
+  border: 0;
 }
 
 .footer-link_terms {
@@ -258,8 +293,9 @@ html {
   text-decoration: none;
   font-size: 13px;
   font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 9px;
+  line-height: 15px;
+  margin-top: 7px;
+  margin-bottom: 16px;
 }
 
 .to-top {
@@ -273,7 +309,7 @@ html {
   height: 64px;
   border: 0;
   border-radius: 2px;
-  background-color: #59BD5A;
+  background-color: #59bd5a;
   background-image: url(./img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
