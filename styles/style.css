@@ -91,7 +91,6 @@ html {
 
 .filter_header {
   display: none;
-  
   @media (min-width: 768px) {
     display: flex;
   }
@@ -99,7 +98,6 @@ html {
 
 .filter_mobile {
   margin-top: 24px;
-
   @media (min-width: 768px) {
     display: none;
   }
@@ -397,4 +395,8 @@ html {
   background-image: url(/img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
 }
