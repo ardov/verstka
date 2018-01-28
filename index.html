@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="columns.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="build/styles/style.css" />
 </head>
 
 <body class="background">
@@ -18,33 +18,41 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-xs-5 col-md-3 nav-section">
-          <img src="./img/logo.svg">
+        <div class="col-xs-5 col-md-2 col-lg-3 nav-section">
+          <img class="header__logo" src="./img/logo.svg">
         </div>
 
-        <div class="col-lg-5">
-          <form class="header__form nav-section" action="submit">
-            <button class="btn">ASAP</button>
-            <label for="header__form_to">to</label>
-            <input type="text" class="header__form_to" id="header__form_to">
-          </form>
-        </div>
+        <form class="col-md-5 nav-section header__form" action="submit">
+          <button class="btn">ASAP</button>
+          <label class="header__form" for="header__form_to">to</label>
+          <input type="text" class="header__form_to" id="header__form_to">
+        </form>
 
-        <div class="col-lg-4 nav-section">
-          <button class="btn header__btn">Sign In</button>
-          <button class="btn header__btn">Register</button>
-          <button class="header__basket">Market</button>
+        <div class="col-xs-7 col-md-5 col-lg-4 nav-section nav-section--right">
+          <a class="btn header__btn" href="">Sign In</a>
+          <a class="btn header__btn btn--primary" href="">Register</a>
+          <a class="header__basket header__btn" href=""></a>
         </div>
-
       </div>
   </header>
 
 
-  <main class="container">
+  <main class="container main">
     <div class="row">
       <div class="col-xs-12">
         <input type="text" class="search-input" placeholder="Search for restaurant or cuisine">
       </div>
+
+      <form class="col-xs-12 filter filter_mobile" action="submit">
+        <div class="filter__when-group">
+          <label class="filter__label" for="filter__when-btn">When</label>
+          <button class="btn" id="filter__when-btn">ASAP</button>
+        </div>
+        <div class="filter__to-group">
+          <label class="filter__label" for="filter__input-to">To</label>
+          <input type="text" class="filter__input-to" id="filter__input-to">
+        </div>
+      </form>
 
       <div class="col-xs-12">
         <h1 class="restaurants-header">Moscow Restaurants</h1>
@@ -60,30 +68,30 @@
       </div>
 
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
+        <a class="card" href="./restaurant.html">
           <img class="card__img" src="./img/restaurants/2.png" alt="">
           <h2 class="card__header">DimSum & Co — ЦДМ</h2>
           <p class="card__tags">₽ • Японская • Китайская • Азиатская</p>
           <p class="card__time">40 - 50 Min</p>
-        </div>
+        </a>
       </div>
 
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
+        <a class="card" href="./restaurant.html">
           <img class="card__img" src="./img/restaurants/3.png" alt="">
           <h2 class="card__header">ДвижОК — Манежная</h2>
           <p class="card__tags">₽ • Американская • Европейская</p>
           <p class="card__time">35 - 45 Min</p>
-        </div>
+        </a>
       </div>
 
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
+        <a class="card" href="./restaurant.html">
           <img class="card__img" src="./img/restaurants/4.png" alt="">
           <h2 class="card__header">НЯ — NHA</h2>
           <p class="card__tags">₽₽ • Вьетнамская</p>
           <p class="card__time">30 - 40 Min</p>
-        </div>
+        </a>
       </div>
 
     </div>
@@ -99,10 +107,10 @@
         <div class="row">
 
           <div class="col-xs-12 col-md-4">
-              <select class="lang-select">
-                <option value="en">English</option>
-                <option value="ru">Russian</option>
-              </select>
+            <select class="lang-select">
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+            </select>
             <a href="" class="hashtag">UberEats</a>
             <div class="social-block">
               <a href="" class="social-block__item">
@@ -145,11 +153,11 @@
           <div class="col-xs-12 col-md-4">
             <a class="footer-link footer-link_terms" href="">© 2017 Uber Technologies Inc.</a>
           </div>
-    
+
           <div class="col-xs-12 col-md-4">
             <a class="footer-link footer-link_terms" href="">Privacy</a>
           </div>
-    
+
           <div class="col-xs-12 col-md-4">
             <a class="footer-link footer-link_terms" href="">Terms</a>
           </div>
