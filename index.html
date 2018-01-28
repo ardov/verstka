@@ -12,32 +12,30 @@
   <link rel="stylesheet" type="text/css" media="screen" href="build/styles/style.css" />
 </head>
 
-<body class="background">
+<body class="body">
 
   <header class="header" id="top">
     <div class="container">
       <div class="row">
 
-        <div class="col-xs-5 col-md-2 col-lg-3 nav-section">
-          <img class="header__logo" src="./img/logo.svg">
+        <div class="col-xs-5 col-md-2 col-lg-3">
+          <a href="" class="logo">
+            <img class="logo__img" src="./img/logo.svg">
+          </a>
         </div>
 
-        <form class="col-md-5 nav-section filter filter_header" action="submit">
-          <button class="btn">ASAP</button>
-          <label class="filter__label filter__label_header" for="filter__input-to_header">to</label>
-          <input type="text" class="filter__input-to" id="filter__input-to_header">
-        </form>
+        <div class="col-md-5 header__filter">
+          <form class="filter" action="">
+            <button class="btn">ASAP</button>
+            <label class="filter__label filter__label_header" for="filter__input-to_header">to</label>
+            <input type="text" class="filter__input-to" id="filter__input-to_header">
+          </form>
+        </div>
 
-        <!-- <form class="col-md-5 nav-section header__form" action="submit">
-          <button class="btn">ASAP</button>
-          <label class="header__form" for="header__form_to">to</label>
-          <input type="text" class="header__form_to" id="header__form_to">
-        </form> -->
-
-        <div class="col-xs-7 col-md-5 col-lg-4 nav-section nav-section--right">
-          <a class="btn header__btn" href="">Sign In</a>
-          <a class="btn header__btn btn--primary" href="">Register</a>
-          <a class="header__basket header__btn" href=""></a>
+        <div class="col-xs-7 col-md-5 col-lg-4 header__btn-group">
+          <a class="btn" href="">Sign In</a>
+          <a class="btn header__btn btn_primary" href="">Register</a>
+          <a class="basket header__basket header__btn" href=""></a>
         </div>
       </div>
   </header>
@@ -106,7 +104,9 @@
   <footer class="footer">
     <div class="container">
       <section class="footer__section footer__section_logo">
-        <img src="./img/white-logo.svg" class="footer__logo">
+        <a href="" class="logo logo_footer">
+          <img src="./img/white-logo.svg" class="logo__img">
+        </a>
       </section>
 
       <section class="footer__section footer__section_links">

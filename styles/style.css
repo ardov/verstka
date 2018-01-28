@@ -1,4 +1,4 @@
-html {
+html, body {
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
@@ -11,9 +11,13 @@ html {
   box-sizing: inherit;
 }
 
-.background {
+.body {
   background-color: #f2f2f2;
 }
+
+/* 
+  HEADER
+*/
 
 .header {
   position: fixed;
@@ -23,31 +27,56 @@ html {
   z-index: 100;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
   background-color: white;
-}
-
-.header__logo {
-  max-width: 100%;
-}
-
-.nav-section {
-  display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
-  align-content: center;
-}
-
-.nav-section--right {
-  justify-content: flex-end;
 }
 
 .header__btn {
   margin-left: 12px;
 }
 
+.header__basket {
+  display: none;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.header__filter {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.header__btn-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 
+  LOGO
+*/
+
+.logo {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.logo__img {
+  max-width: 100%;
+}
+
+/* 
+  BUTTON
+*/
+
 .btn {
+  font-family: inherit;
   display: inline-block;
   padding: 7px 15px;
-  border-radius: 2px;
   font-size: 13px;
   line-height: 24px;
   text-decoration: none;
@@ -59,23 +88,27 @@ html {
   cursor: pointer;
 }
 
-.btn--primary {
+.btn_primary {
   background: #262626;
   color: white;
   border-color: #262626;
 }
 
-.header__basket {
-  display: none;
-  @media (min-width: 768px) {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-image: url(/img/basket.svg);
-    background-position: center, center;
-    background-repeat: no-repeat;
-  }
+/* 
+  BASKET
+*/
+
+.basket {
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/basket.svg);
+  background-position: center, center;
+  background-repeat: no-repeat;
 }
+
+/* 
+  MAIN
+*/
 
 .main {
   margin-top: 72px;
@@ -87,13 +120,7 @@ html {
 
 .filter {
   display: flex;
-}
-
-.filter_header {
-  display: none;
-  @media (min-width: 768px) {
-    display: flex;
-  }
+  width: 100%;
 }
 
 .filter_mobile {
@@ -273,7 +300,7 @@ html {
   padding-bottom: 40px;
 }
 
-.select {
+/* .select {
   position: relative;
   min-width: 50%;
 }
@@ -284,13 +311,12 @@ html {
   height: 40px;
   opacity: 0.1;
   z-index: 100;
-}
+} */
 
 .lang-select {
   position: relative;
   left: 0;
-  margin-top: 32px;
-  min-width: 50%;
+  width: 75%;
   padding: 12px 32px 12px 48px;
   -webkit-appearance: none;
   -moz-appearance: none;
