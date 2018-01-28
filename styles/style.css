@@ -271,21 +271,7 @@ body {
 .footer {
   display: block;
   margin-top: 80px;
-  /* padding-top: 56px;
-  padding-bottom: 40px; */
   background-color: #262626;
-}
-
-.divider {
-  border: 0;
-  border-top: solid 1px rgba(255, 255, 255, 0.4);
-  margin-top: 24px;
-}
-
-.divider_footer {
-  border: 0;
-  border-top: solid 1px rgba(255, 255, 255, 0.4);
-  margin-top: 24px;
 }
 
 .footer__section {
@@ -302,18 +288,26 @@ body {
   padding-bottom: 40px;
 }
 
-/* .select {
-  position: relative;
-  min-width: 50%;
+.footer__section_apps {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @media (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
-.select__select {
-  position: absolute;
-  min-width: 50%;
-  height: 40px;
-  opacity: 0.1;
-  z-index: 100;
-} */
+.footer__section_terms {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 0;
+}
+
+/* 
+  FOOTER BLOCKS
+*/
 
 .lang-select {
   position: relative;
@@ -332,22 +326,10 @@ body {
   line-height: 16px;
   text-align: left;
   color: #ffffff;
+  &::-ms-expand {
+    display: none;
+  }
 }
-
-.lang-select::-ms-expand {
-  display: none;
-}
-
-/* .lang-select::before {
-  position: absolute;
-  left: 16px;
-  content: url(./img/world.svg);
-}
-.lang-select::after {
-  position: absolute;
-  right: 8px;
-  content: url(./img/chevron.svg);
-} */
 
 .hashtag {
   display: block;
@@ -356,11 +338,10 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
-}
-
-.hashtag::before {
-  content: "#";
-  color: #49a144;
+  &::before {
+    content: "#";
+    color: #49a144;
+  }
 }
 
 .social-block {
@@ -375,26 +356,14 @@ body {
   height: 24px;
 }
 
-.footer__section_apps {
-  display: flex;
-  justify-content: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.section-apps__app {
+.app-banner {
+  display: block;
   margin-left: 12px;
   margin-right: 12px;
 }
 
-.footer__section_terms {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border: 0;
-}
-
-.footer-link_terms {
-  font-size: 11px;
+.app-banner__img {
+  min-width: 100%;
 }
 
 .footer-link {
@@ -403,10 +372,20 @@ body {
   text-decoration: none;
   font-size: 13px;
   font-weight: 400;
-  line-height: 15px;
-  margin-top: 7px;
-  margin-bottom: 16px;
+  line-height: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
+
+.footer-link_terms {
+  font-size: 11px;
+}
+
+
+/* 
+  TO TOP BUTTON
+*/
 
 .to-top {
   position: fixed;
