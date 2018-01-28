@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -190,7 +191,23 @@ html, body {
   padding-left: 35px;
   line-height: 24px;
   font-size: 13px;
-  color: #1d1d1d;
+  color: #1d1d1d
+}
+
+.filter__input-to::-webkit-input-placeholder {
+  color: rgba(98, 98, 98, .5);
+}
+
+.filter__input-to:-ms-input-placeholder {
+  color: rgba(98, 98, 98, .5);
+}
+
+.filter__input-to::-ms-input-placeholder {
+  color: rgba(98, 98, 98, .5);
+}
+
+.filter__input-to::placeholder {
+  color: rgba(98, 98, 98, .5);
 }
 
 /* 
@@ -214,7 +231,7 @@ html, body {
   font-size: 13px;
   line-height: 24px;
   color: #1d1d1d;
-  outline: none;
+  outline: none
 }
 
 .search-input:focus {
@@ -238,6 +255,7 @@ html, body {
 }
 
 @media (min-width: 768px) {
+
   .search-input {
     padding-left: 30px;
     background-size: 22px;
@@ -247,7 +265,7 @@ html, body {
 }
 
 /* 
-  RESTAURANT CARDS
+  RESTAURANT HEADER
 */
 
 .restaurants-header {
@@ -265,12 +283,14 @@ html, body {
   }
 }
 
+/* 
+  RESTAURANT CARDS
+*/
+
 .card {
   margin-top: 16px;
   display: block;
   text-decoration: none;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 .card__img {

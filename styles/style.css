@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
@@ -163,6 +164,9 @@ html, body {
   line-height: 24px;
   font-size: 13px;
   color: #1d1d1d;
+  &::placeholder {
+    color: rgba(98, 98, 98, 0.5);
+  }
 }
 
 /* 
@@ -187,18 +191,13 @@ html, body {
   line-height: 24px;
   color: #1d1d1d;
   outline: none;
-}
-
-.search-input:focus {
-  border-bottom: 1px solid rgba(117, 117, 117, 0.6);
-}
-
-.search-input::placeholder {
-  color: rgba(98, 98, 98, 0.5);
-}
-
-@media (min-width: 768px) {
-  .search-input {
+  &:focus {
+    border-bottom: 1px solid rgba(117, 117, 117, 0.6);
+  }
+  &::placeholder {
+    color: rgba(98, 98, 98, 0.5);
+  }
+  @media (min-width: 768px) {
     padding-left: 30px;
     background-size: 22px;
     background-position: left top 8px;
@@ -207,7 +206,7 @@ html, body {
 }
 
 /* 
-  RESTAURANT CARDS
+  RESTAURANT HEADER
 */
 
 .restaurants-header {
@@ -221,11 +220,14 @@ html, body {
   }
 }
 
+/* 
+  RESTAURANT CARDS
+*/
+
 .card {
   margin-top: 16px;
   display: block;
   text-decoration: none;
-  transition: 0.3s ease-in-out;
 }
 
 .card__img {
