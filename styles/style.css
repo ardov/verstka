@@ -67,7 +67,6 @@ html {
 
 .header__basket {
   display: none;
-
   @media (min-width: 768px) {
     display: inline-block;
     width: 40px;
@@ -86,23 +85,16 @@ html {
   FILTER FORM
 */
 
-.header__form {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .header__form {
-    display: flex;
-  }
-}
-
-.header__form_to {
-  margin-left: 8px;
-  flex-grow: 1;
-}
-
 .filter {
   display: flex;
+}
+
+.filter_header {
+  display: none;
+  
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .filter_mobile {
@@ -121,6 +113,13 @@ html {
   padding-bottom: 8px;
 }
 
+.filter__label_header {
+  padding: 8px;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 16px;
+}
+
 .filter__to-group {
   flex-grow: 1;
   margin-left: 16px;
@@ -136,7 +135,6 @@ html {
   background-position: 12px;
   background-repeat: no-repeat;
   padding-left: 35px;
-
   line-height: 24px;
   font-size: 13px;
   color: #1d1d1d;
@@ -193,7 +191,6 @@ html {
   font-weight: 400;
   margin: 0;
   margin-top: 40px;
-
   @media (min-width: 768px) {
     margin-top: 24px;
   }
