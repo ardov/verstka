@@ -583,3 +583,36 @@ body {
 .nav__link_active {
   color: #327430;
 }
+
+.menu {
+
+}
+
+.menu__header {
+  margin-top: 56px;
+  text-align: center
+}
+
+.dish {
+
+}
+
+.dish__info {
+  
+}
+
+.dish__name {
+
+}
+
+.dish__composition {
+
+}
+
+.dish__price {
+
+}
+
+.dish__img {
+
+}
