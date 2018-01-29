@@ -382,7 +382,6 @@ body {
   font-size: 11px;
 }
 
-
 /* 
   TO TOP BUTTON
 */
@@ -406,4 +405,87 @@ body {
     width: 80px;
     height: 80px;
   }
+}
+
+/* 
+
+
+  RESTAURANT PAGE STYLES
+*/
+
+.promo {
+  width: 100%;
+  position: relative;
+  background-image: url(/img/restaurants/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 56px;
+  height: 300px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 256px;
+  background-color: #d8d8d8;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info-card {
+  position: absolute;
+  bottom: -56px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+
+.info-card__header {
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 24px;
+  text-align: center;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+.info-card__info {
+  margin: 0;
+  margin-top: 40px;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: #626262;
+}
+
+.info-card__time {
+  margin: 0;
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #262626;
+  border-radius: 16px;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__link {
+}
+
+.nav__link_active {
+  color: #327430;
 }
