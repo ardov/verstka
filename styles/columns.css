@@ -58,6 +58,7 @@ xl — от 1200 и выше (большие десктопы).
 .col-lg-11,
 .col-lg-12 {
   padding: 0 8px;
+  min-width: 0;
 }
 
 .col-xs-1  { flex-basis: 8.3333%; }
