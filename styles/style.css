@@ -16,6 +16,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.body_restaurant {
+  background-color: #fff;
+}
+
 /* 
   HEADER
 */
@@ -492,6 +496,7 @@ body {
   display: none;
   background-color: #fff;
   border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  
   @media (min-width: 768px) {
     display: block;
   }
@@ -546,11 +551,24 @@ body {
   }
 }
 
+.dishes {
+  margin-top: -16px;
+}
+
 .dish {
   max-width: 100%;
   display: flex;
   border-bottom: 1px solid hsla(0,0%,46%,.2);
-  padding-top: -1px;
+  margin-top: 16px;
+
+  &:hover {
+    background-color: hsla(0, 0%, 46%, .04);
+  }
+
+  @media (min-width: 768px) {
+    border: 1px solid hsla(0, 0%, 46%, .2);
+    border-radius: 2px;
+  }
 }
 
 .dish__info {
@@ -558,6 +576,18 @@ body {
   min-width: 0;
   display: flex;
   flex-direction: column;
+  padding-bottom: 16px;
+  padding-right: 16px;
+
+  @media (min-width: 768px) {
+    padding-top: 16px;
+    padding-left: 24px;
+  }
+
+  @media (min-width: 991px) {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
 }
 
 .dish__name {
@@ -568,6 +598,10 @@ body {
   line-height: 24px;
   font-size: 14px;
   color: #1D1D1D;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .dish__composition {
@@ -575,13 +609,14 @@ body {
   margin-bottom: 0;
   line-height: 21px;
   font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #626262;
 }
 
 .dish__price {
   margin-top: auto;
-  margin-bottom: 16px;
-  justify-self: end;
   font-weight: 500;
   line-height: 21px;
   font-size: 15px;
@@ -596,4 +631,14 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 2px;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 160px;
+  }
+
+  @media (min-width: 991px) {
+    width: 170px;
+    height: 160px;
+  }
 }
