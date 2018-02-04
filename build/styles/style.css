@@ -504,27 +504,28 @@ body {
 .promo {
   width: 100%;
   position: relative;
-  background-image: url(/img/restaurants/1.png);
+  background-image: url(/img/restaurant/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 56px;
-  height: 256px;
+  max-height: 256px;
+  padding: 80px 0;
 }
 
 @media (min-width: 768px) {
 
   .promo {
+    max-height: none;
     height: 364px;
     margin-bottom: 0;
   }
 }
 
 .info-card {
-  margin-top: 131px;
-  /* display: flex;
-  align-items: center;
-  flex-direction: column; */
+  display: block;
+  position: relative;
+  bottom: -52px;
   padding: 24px;
   background: #fff;
   -webkit-box-shadow: 0px 0px 16px rgba(117, 117, 117, .2);
@@ -535,7 +536,8 @@ body {
 @media (min-width: 768px) {
 
   .info-card {
-    margin-top: 80px;
+    display: inline-block;
+    position: static;
     padding: 38px 48px;
   }
 }
@@ -556,6 +558,15 @@ body {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+
+  .info-card__header {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+  }
+}
+
 .info-card__details {
   margin-top: 40px;
   display: -webkit-box;
@@ -570,13 +581,37 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+
+  .info-card__details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 54px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .info-card__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 0;
   font-weight: 400;
   line-height: 16px;
   font-size: 14px;
   text-align: center;
   color: #626262;
+}
+
+@media (min-width: 768px) {
+
+  .info-card__info {
+    text-align: left;
+  }
 }
 
 .info-card__time {
@@ -592,6 +627,14 @@ body {
   padding: 8px 16px;
   background-color: #262626;
   border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+
+  .info-card__time {
+    margin-top: 0;
+    margin-left: 16px;
+  }
 }
 
 .nav {
@@ -727,7 +770,7 @@ body {
   text-overflow: ellipsis;
   line-height: 24px;
   font-size: 14px;
-  color: #1D1D1D;
+  color: #1d1d1d;
 }
 
 @media (min-width: 768px) {
@@ -753,7 +796,7 @@ body {
   font-weight: 500;
   line-height: 21px;
   font-size: 15px;
-  color: #1D1D1D;
+  color: #1d1d1d;
 }
 
 .dish__img {

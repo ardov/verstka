@@ -420,30 +420,32 @@ body {
 .promo {
   width: 100%;
   position: relative;
-  background-image: url(/img/restaurants/1.png);
+  background-image: url(/img/restaurant/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 56px;
-  height: 256px;
+  max-height: 256px;
+  padding: 80px 0;
   @media (min-width: 768px) {
+    max-height: none;
     height: 364px;
     margin-bottom: 0;
   }
 }
 
 .info-card {
-  margin-top: 131px;
-  /* display: flex;
-  align-items: center;
-  flex-direction: column; */
+  display: block;
+  position: relative;
+  bottom: -52px;
   padding: 24px;
   background: #fff;
   box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
   border-radius: 2px;
 
   @media (min-width: 768px) {
-    margin-top: 80px;
+    display: inline-block;
+    position: static;
     padding: 38px 48px;
   }
 
@@ -459,6 +461,11 @@ body {
   text-align: center;
   color: #1d1d1d;
   margin: 0;
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+  }
 }
 
 .info-card__details {
@@ -466,15 +473,24 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 54px;
+    align-items: baseline;
+  }
 }
 
 .info-card__info {
+  flex-grow: 1;
   margin: 0;
   font-weight: 400;
   line-height: 16px;
   font-size: 14px;
   text-align: center;
   color: #626262;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .info-card__time {
@@ -490,13 +506,17 @@ body {
   padding: 8px 16px;
   background-color: #262626;
   border-radius: 16px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 16px;
+  }
 }
 
 .nav {
   display: none;
   background-color: #fff;
   border-bottom: 1px solid rgba(117, 117, 117, 0.2);
-  
+
   @media (min-width: 768px) {
     display: block;
   }
@@ -558,15 +578,15 @@ body {
 .dish {
   max-width: 100%;
   display: flex;
-  border-bottom: 1px solid hsla(0,0%,46%,.2);
+  border-bottom: 1px solid hsla(0, 0%, 46%, 0.2);
   margin-top: 16px;
 
   &:hover {
-    background-color: hsla(0, 0%, 46%, .04);
+    background-color: hsla(0, 0%, 46%, 0.04);
   }
 
   @media (min-width: 768px) {
-    border: 1px solid hsla(0, 0%, 46%, .2);
+    border: 1px solid hsla(0, 0%, 46%, 0.2);
     border-radius: 2px;
   }
 }
@@ -597,7 +617,7 @@ body {
   text-overflow: ellipsis;
   line-height: 24px;
   font-size: 14px;
-  color: #1D1D1D;
+  color: #1d1d1d;
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -620,7 +640,7 @@ body {
   font-weight: 500;
   line-height: 21px;
   font-size: 15px;
-  color: #1D1D1D;
+  color: #1d1d1d;
 }
 
 .dish__img {
