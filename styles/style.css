@@ -147,7 +147,10 @@ body {
   padding: 8px;
   font-weight: 300;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 13px;
+  @media (min-width: 991px) {
+    font-size: 16px;
+  }
 }
 
 .filter__to-group {
@@ -637,6 +640,7 @@ body {
 
 .dish__price {
   margin-top: auto;
+  margin-bottom: 0;
   font-weight: 500;
   line-height: 21px;
   font-size: 15px;
