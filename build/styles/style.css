@@ -126,7 +126,7 @@ body {
 .basket {
   width: 40px;
   height: 40px;
-  background-image: url(/img/basket.svg);
+  background-image: url(../../img/basket.svg);
   background-position: center, center;
   background-repeat: no-repeat;
 }
@@ -196,7 +196,7 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   background-color: transparent;
-  background-image: url(/img/location.svg);
+  background-image: url(../../img/location.svg);
   background-position: 12px;
   background-repeat: no-repeat;
   padding-left: 35px;
@@ -235,7 +235,7 @@ body {
   border: 0;
   border-bottom: 1px solid rgba(117, 117, 117, .3);
   background-color: transparent;
-  background-image: url(/img/search.svg);
+  background-image: url(../../img/search.svg);
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: left top 12px;
@@ -401,7 +401,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #3b3b3b;
-  background-image: url(/img/world.svg), url(/img/chevron.svg);
+  background-image: url(../../img/world.svg), url(../../img/chevron.svg);
   background-position: left 16px center, right 8px center;
   background-repeat: no-repeat;
   border-radius: 2px;
@@ -489,7 +489,7 @@ body {
   border: 0;
   border-radius: 2px;
   background-color: #59bd5a;
-  background-image: url(/img/arrow.svg);
+  background-image: url(../../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -511,7 +511,7 @@ body {
 .promo {
   width: 100%;
   position: relative;
-  background-image: url(/img/restaurant/hero.png);
+  background-image: url(../../img/restaurant/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
