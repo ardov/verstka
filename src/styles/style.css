@@ -2,7 +2,7 @@ html,
 body {
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility; */
   color: #1d1d1d;
 }
 
