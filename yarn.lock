@@ -507,6 +507,12 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+flexboxgrid2@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/flexboxgrid2/-/flexboxgrid2-7.1.0.tgz#7de7c9ef7112274e81ef8bf5bfb6170fbce404d9"
+  dependencies:
+    normalize.css "^7.0.0"
+
 for-in@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -1056,6 +1062,10 @@ normalize-path@^2.0.0, normalize-path@^2.0.1:
 normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
+
+normalize.css@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
 
 npm-run-path@^2.0.0:
   version "2.0.2"

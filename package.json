@@ -9,5 +9,8 @@
     "postcss": "^6.0.17",
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.1.0"
+  },
+  "dependencies": {
+    "flexboxgrid2": "^7.1.0"
   }
 }
