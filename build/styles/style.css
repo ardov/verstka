@@ -54,24 +54,10 @@ body {
   }
 }
 
-.header__filter {
-  display: none;
-}
-
-@media (min-width: 768px) {
-
-  .header__filter {
-    display: block;
-  }
-}
-
 .header__btn-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 /* 

@@ -7,8 +7,8 @@
   <title>Uber Eats</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/columns.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="build/styles/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="build/styles/flexboxgrid2.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="build/styles/style.css" />
 </head>
 
@@ -24,18 +24,20 @@
           </a>
         </div>
 
-        <div class="col-md-5 header__filter">
+        <div class="hidden-xs hidden-sm col-md-5">
           <form class="filter" action="">
-            <button class="btn">ASAP</button>
+            <button class="btn filter__btn">ASAP</button>
             <label class="filter__label filter__label_header" for="filter__input-to_header">to</label>
             <input type="text" class="filter__input-to" id="filter__input-to_header" placeholder="Enter location">
           </form>
         </div>
 
-        <div class="col-xs-7 col-md-5 col-lg-4 header__btn-group">
-          <a class="btn" href="">Sign In</a>
-          <a class="btn header__btn btn_primary" href="">Register</a>
-          <a class="basket header__basket header__btn" href=""></a>
+        <div class="col-xs-7 col-md-5 col-lg-4 end-xs">
+          <div class="header__btn-group">
+            <a class="btn" href="">Sign In</a>
+            <a class="btn header__btn btn_primary" href="">Register</a>
+            <a class="basket header__basket header__btn" href=""></a>
+          </div>
         </div>
       </div>
     </div>
