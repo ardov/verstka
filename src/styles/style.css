@@ -580,6 +580,14 @@ body {
 
 .dishes {
   margin-top: -16px;
+
+  @media (--md-viewport) {
+    margin-top: -32px;
+  }
+
+  @media (--lg-viewport) {
+    margin-top: -48px;
+  }
 }
 
 .dish {
@@ -593,8 +601,12 @@ body {
   }
 
   @media (--md-viewport) {
+    margin-top: 32px;
     border: 1px solid hsla(0, 0%, 46%, 0.2);
     border-radius: 2px;
+  }
+  @media (--lg-viewport) {
+    margin-top: 48px;
   }
 }
 

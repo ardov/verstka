@@ -717,6 +717,20 @@ body {
   margin-top: -16px;
 }
 
+@media (min-width: 768px) {
+
+  .dishes {
+    margin-top: -32px;
+  }
+}
+
+@media (min-width: 991px) {
+
+  .dishes {
+    margin-top: -48px;
+  }
+}
+
 .dish {
   max-width: 100%;
   display: -webkit-box;
@@ -733,8 +747,16 @@ body {
 @media (min-width: 768px) {
 
   .dish {
+    margin-top: 32px;
     border: 1px solid hsla(0, 0%, 46%, .2);
     border-radius: 2px;
+  }
+}
+
+@media (min-width: 991px) {
+
+  .dish {
+    margin-top: 48px;
   }
 }
 
