@@ -1,8 +1,11 @@
+@custom-media --medium (min-width: 768px);
+@custom-media --large (min-width: 991px);
+
 html,
 body {
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  /* text-rendering: optimizeLegibility; */
+  text-rendering: optimizeLegibility;
   color: #1d1d1d;
 }
 
@@ -42,14 +45,14 @@ body {
 
 .header__basket {
   display: none;
-  @media (min-width: 768px) {
+  @media (--medium) {
     display: inline-block;
   }
 }
 
 .header__filter {
   display: none;
-  @media (min-width: 768px) {
+  @media (--medium) {
     display: block;
   }
 }
@@ -128,9 +131,13 @@ body {
   width: 100%;
 }
 
+.filter__btn {
+
+}
+
 .filter_mobile {
   margin-top: 24px;
-  @media (min-width: 768px) {
+  @media (--medium) {
     display: none;
   }
 }
@@ -148,7 +155,7 @@ body {
   font-weight: 300;
   line-height: 24px;
   font-size: 13px;
-  @media (min-width: 991px) {
+  @media (--large) {
     font-size: 16px;
   }
 }
@@ -204,7 +211,7 @@ body {
   &::placeholder {
     color: rgba(98, 98, 98, 0.5);
   }
-  @media (min-width: 768px) {
+  @media (--medium) {
     padding-left: 30px;
     background-size: 22px;
     background-position: left top 8px;
@@ -222,7 +229,7 @@ body {
   font-weight: 400;
   margin: 0;
   margin-top: 40px;
-  @media (min-width: 768px) {
+  @media (--medium) {
     margin-top: 24px;
   }
 }
@@ -300,7 +307,7 @@ body {
   justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  @media (min-width: 768px) {
+  @media (--medium) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -408,7 +415,7 @@ body {
   background-image: url(../../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
-  @media (min-width: 768px) {
+  @media (--medium) {
     width: 80px;
     height: 80px;
   }
@@ -430,7 +437,7 @@ body {
   margin-bottom: 56px;
   max-height: 256px;
   padding: 80px 0;
-  @media (min-width: 768px) {
+  @media (--medium) {
     max-height: none;
     height: 364px;
     margin-bottom: 0;
@@ -446,13 +453,13 @@ body {
   box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
   border-radius: 2px;
 
-  @media (min-width: 768px) {
+  @media (--medium) {
     display: inline-block;
     position: static;
     padding: 38px 48px;
   }
 
-  @media (min-width: 991px) {
+  @media (--large) {
     padding: 38px;
   }
 }
@@ -464,7 +471,7 @@ body {
   text-align: center;
   color: #1d1d1d;
   margin: 0;
-  @media (min-width: 768px) {
+  @media (--medium) {
     font-size: 36px;
     line-height: 42px;
     text-align: left;
@@ -476,7 +483,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  @media (min-width: 768px) {
+  @media (--medium) {
     flex-direction: row;
     margin-top: 54px;
     align-items: baseline;
@@ -491,7 +498,7 @@ body {
   font-size: 14px;
   text-align: center;
   color: #626262;
-  @media (min-width: 768px) {
+  @media (--medium) {
     text-align: left;
   }
 }
@@ -509,7 +516,7 @@ body {
   padding: 8px 16px;
   background-color: #262626;
   border-radius: 16px;
-  @media (min-width: 768px) {
+  @media (--medium) {
     margin-top: 0;
     margin-left: 16px;
   }
@@ -520,7 +527,7 @@ body {
   background-color: #fff;
   border-bottom: 1px solid rgba(117, 117, 117, 0.2);
 
-  @media (min-width: 768px) {
+  @media (--medium) {
     display: block;
   }
 }
@@ -562,12 +569,12 @@ body {
     left: 50%;
     margin-left: -25px;
 
-    @media (min-width: 768px) {
+    @media (--medium) {
       display: none;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (--medium) {
     margin-top: 56px;
     margin-bottom: 32px;
     text-align: left;
@@ -588,7 +595,7 @@ body {
     background-color: hsla(0, 0%, 46%, 0.04);
   }
 
-  @media (min-width: 768px) {
+  @media (--medium) {
     border: 1px solid hsla(0, 0%, 46%, 0.2);
     border-radius: 2px;
   }
@@ -602,12 +609,12 @@ body {
   padding-bottom: 16px;
   padding-right: 16px;
 
-  @media (min-width: 768px) {
+  @media (--medium) {
     padding-top: 16px;
     padding-left: 24px;
   }
 
-  @media (min-width: 991px) {
+  @media (--large) {
     padding-top: 16px;
     padding-left: 16px;
   }
@@ -622,7 +629,7 @@ body {
   font-size: 14px;
   color: #1d1d1d;
 
-  @media (min-width: 768px) {
+  @media (--medium) {
     font-size: 16px;
   }
 }
@@ -656,12 +663,12 @@ body {
   object-position: center;
   border-radius: 2px;
 
-  @media (min-width: 768px) {
+  @media (--medium) {
     width: 200px;
     height: 160px;
   }
 
-  @media (min-width: 991px) {
+  @media (--large) {
     width: 170px;
     height: 160px;
   }
