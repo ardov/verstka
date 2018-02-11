@@ -45,6 +45,7 @@ body {
 
 .header__basket {
   display: none;
+
   @media (--md-viewport) {
     display: inline-block;
   }
@@ -124,6 +125,7 @@ body {
 }
 
 .filter__btn {
+
   @media (--lg-viewport) {
     font-size: 16px;
   }
@@ -131,6 +133,7 @@ body {
 
 .filter_mobile {
   margin-top: 24px;
+
   @media (--md-viewport) {
     display: none;
   }
@@ -149,6 +152,7 @@ body {
   font-weight: 300;
   line-height: 24px;
   font-size: 13px;
+
   @media (--lg-viewport) {
     font-size: 16px;
   }
@@ -172,9 +176,17 @@ body {
   line-height: 24px;
   font-size: 13px;
   color: #1d1d1d;
+  outline: none;
+  transition: .1s ease-in-out;
+
+  &:focus {
+    border-color: rgba(117, 117, 117, 0.6);
+  }
+
   &::placeholder {
     color: rgba(98, 98, 98, 0.5);
   }
+
   @media (--lg-viewport) {
     font-size: 16px;
   }
@@ -202,12 +214,15 @@ body {
   line-height: 24px;
   color: #1d1d1d;
   outline: none;
+
   &:focus {
     border-bottom: 1px solid rgba(117, 117, 117, 0.6);
   }
+
   &::placeholder {
     color: rgba(98, 98, 98, 0.5);
   }
+
   @media (--md-viewport) {
     padding-left: 30px;
     background-size: 22px;
@@ -226,6 +241,7 @@ body {
   font-weight: 400;
   margin: 0;
   margin-top: 40px;
+
   @media (--md-viewport) {
     margin-top: 24px;
   }
@@ -239,6 +255,12 @@ body {
   margin-top: 16px;
   display: block;
   text-decoration: none;
+  padding-bottom: 20px;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(117, 117, 117, .04);
+  }
 }
 
 .card__img {
@@ -269,7 +291,7 @@ body {
 
 .card__time {
   margin-top: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   font-size: 13px;
   line-height: 21px;
   color: #1d1d1d;
@@ -337,6 +359,7 @@ body {
   line-height: 16px;
   text-align: left;
   color: #ffffff;
+
   &::-ms-expand {
     display: none;
   }
@@ -349,6 +372,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
+
   &::before {
     content: "#";
     color: #49a144;
@@ -362,6 +386,7 @@ body {
 }
 
 .social-block__item {
+  display: inline-block;
   margin-right: 12px;
   width: 24px;
   height: 24px;
@@ -384,9 +409,8 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 .footer-link_terms {

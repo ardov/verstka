@@ -195,7 +195,14 @@ body {
   padding-left: 35px;
   line-height: 24px;
   font-size: 13px;
-  color: #1d1d1d
+  color: #1d1d1d;
+  outline: none;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out
+}
+
+.filter__input-to:focus {
+  border-color: rgba(117, 117, 117, .6);
 }
 
 .filter__input-to::-webkit-input-placeholder {
@@ -302,6 +309,13 @@ body {
   margin-top: 16px;
   display: block;
   text-decoration: none;
+  padding-bottom: 20px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out
+}
+
+.card:hover {
+  background-color: rgba(117, 117, 117, .04);
 }
 
 .card__img {
@@ -334,7 +348,7 @@ body {
 
 .card__time {
   margin-top: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   font-size: 13px;
   line-height: 21px;
   color: #1d1d1d;
@@ -437,6 +451,7 @@ body {
 }
 
 .social-block__item {
+  display: inline-block;
   margin-right: 12px;
   width: 24px;
   height: 24px;
@@ -459,9 +474,8 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 .footer-link_terms {
