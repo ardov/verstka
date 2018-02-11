@@ -150,8 +150,11 @@ body {
   width: 100%;
 }
 
-.filter__btn {
+@media (min-width: 991px) {
 
+  .filter__btn {
+    font-size: 16px;
+  }
 }
 
 .filter_mobile {
@@ -223,6 +226,13 @@ body {
 
 .filter__input-to::placeholder {
   color: rgba(98, 98, 98, .5);
+}
+
+@media (min-width: 991px) {
+
+  .filter__input-to {
+    font-size: 16px;
+  }
 }
 
 /* 
