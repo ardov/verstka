@@ -197,8 +197,8 @@ body {
   font-size: 13px;
   color: #1d1d1d;
   outline: none;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out
 }
 
 .filter__input-to:focus {
@@ -310,8 +310,8 @@ body {
   display: block;
   text-decoration: none;
   padding-bottom: 20px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out
 }
 
 .card:hover {
@@ -524,7 +524,7 @@ body {
 
 .promo {
   width: 100%;
-  background-image: url(../../img/restaurant/hero.png);
+  background-image: url(../../img/restaurant/hero_xs.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -540,10 +540,13 @@ body {
     padding-bottom: 80px;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+}
 
-    /* 
-  height: 364px;
-*/
+@media (min-width: 991px) {
+
+  .promo {
+    background-image: url(../../img/restaurant/hero_lg.png);
   }
 }
 
